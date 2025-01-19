@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FIXD HVAC Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ca617004e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1>Contact Us</h1>
+            <p>We’re here to help. Reach out to us for all your HVAC needs!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="section__title">Get In Touch</h2>
+        <p>Use the form below or call us directly to schedule a service or ask questions.</p>
+
+        <form class="contact__form" action="https://formsubmit.co/3edfda4bf0c6ebf9b46004304fb97806" method="POST">
+            <div class="form__row form__row--two">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form__row">
+                <label for="appointment-date" class="form__label">Select Appointment Date:</label>
+                <input type="date" id="appointment-date" name="date" required>
+            </div>
+            <div class="form__row">
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <!-- Hidden Fields -->
+            <input type="hidden" name="_subject" value="New Contact Request from FIXD HVAC Solutions">
+            <button type="submit" class="button">Send Message</button>
+        </form>
+
+        <div class="contact__info">
+            <p><i class="fa-solid fa-phone"></i> Call us: (123) 456-7890</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: info@fixdhvac.com</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Address: 123 HVAC St, Comfort City, CA 90001</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FIXD HVAC Solutions. All rights reserved.</p>
+        <div class="footer__socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

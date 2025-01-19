@@ -1,0 +1,348 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+    --red: #e63946;
+    --blue: #457b9d;
+    --light-gray: #f1faee;
+    --dark-gray: #1d3557;
+    --white: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--dark-gray);
+    color: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px; /* Fixed navbar height */
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__logo {
+    color: var(--light-gray);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Navbar Menu for Desktop */
+.navbar__menu {
+    list-style: none;
+    display: flex; /* Show items inline on larger screens */
+    gap: 1rem;
+}
+
+/* Hide Toggle Button on Desktop */
+.navbar__toggle {
+    display: none; /* Hide the hamburger menu by default */
+}
+
+.navbar__menu.active {
+    display: flex;
+    max-height: 300px; /* Adjust as needed */
+}
+
+.navbar__link {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar__link:hover {
+    color: var(--red);
+}
+
+.navbar__toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--light-gray);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fix Content Overlap Issue */
+.services-page,
+.hero,
+.about,
+.contact {
+    padding-top: 100px; /* Matches the navbar height */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, var(--red), var(--blue));
+    color: var(--light-gray);
+    text-align: center;
+    padding: 10rem 2rem 8rem 2rem;
+}
+
+.hero__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero__content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--red);
+    color: var(--light-gray);
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--light-gray);
+}
+
+.services-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem; /* Add padding to the left and right */
+}
+
+.service i {
+    font-size: 2.5rem;
+    color: var(--red);
+}
+
+.service h3 {
+    margin: 1rem 0;
+    color: var(--dark-gray);
+}
+
+.service p {
+    color: var(--dark-gray);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background: var(--blue);
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__row--two {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.contact__form input[type="date"] {
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+.form__label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-gray);
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer__socials a {
+    color: var(--light-gray);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Services Page */
+.services-page {
+    text-align: center;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding-bottom: 4rem;
+}
+
+.services-page__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+.services-page__description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card__icon {
+    font-size: 2.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.service-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.service-card__description {
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+/* About Page */
+.about-page {
+    padding: 4rem 2rem;
+    background: var(--light-gray);
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.about-page__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-page__text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.about-page__list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about-page__list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-page__list i {
+    color: var(--red);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Show the toggle button on mobile screens */
+    .navbar__toggle {
+        display: block; /* Display hamburger menu */
+    }
+
+    /* Stack the navbar menu vertically on mobile */
+    .navbar__menu {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack items */
+        background: var(--dark-gray); /* Optional: Add background */
+        position: absolute;
+        top: 80px; /* Below the navbar */
+        right: 0;
+        width: 100%; /* Full width */
+        padding: 1rem;
+        gap: 1rem; /* Add space between items */
+    }
+
+    /* Show menu when the toggle button is clicked */
+    .navbar__menu.active {
+        display: flex; /* Show the menu */
+    }
+}

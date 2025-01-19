@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXD HVAC Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ca617004e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1>Stay Comfortable All Year Round</h1>
+            <p>Expert heating, ventilation, and air conditioning services at your doorstep.</p>
+            <a href="#contact" class="button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section__title">Our Services</h2>
+        <div class="services__grid">
+            <div class="service">
+                <i class="fa-solid fa-wind"></i>
+                <h3>Air Conditioning</h3>
+                <p>We provide installation, repair, and maintenance services for all types of air conditioning systems.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Heating</h3>
+                <p>Our heating solutions keep your home warm and energy-efficient during the cold months.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-tools"></i>
+                <h3>Ventilation</h3>
+                <p>Ensure proper airflow in your home with our professional ventilation system services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section__title">Why Choose Us?</h2>
+        <p>
+            With over 10 years of experience, we provide high-quality HVAC services to homes and businesses. Our
+            certified technicians and customer-focused approach ensure that your heating and cooling needs are always met.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section__title">Contact Us</h2>
+        <form class="contact__form" action="https://formsubmit.co/3edfda4bf0c6ebf9b46004304fb97806" method="POST">
+            <div class="form__row form__row--two">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form__row">
+                <label for="appointment-date" class="form__label">Select Appointment Date:</label>
+                <input type="date" id="appointment-date" name="date" required>
+            </div>
+            <div class="form__row">
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <!-- Hidden Fields -->
+            <input type="hidden" name="_subject" value="New Contact Request from FIXD HVAC Solutions">
+            <button type="submit" class="button">Send Message</button>
+        </form>
+        
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FIXD HVAC Solutions. All rights reserved.</p>
+        <div class="footer__socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
