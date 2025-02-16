@@ -38,9 +38,10 @@
 }
 
 .navbar__logo {
-    color: var(--light-gray);
-    font-size: 1.5rem;
-    text-decoration: none;
+    height: 90px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image with the text */
+    color: var(--white);
 }
 
 /* Navbar Menu for Desktop */
