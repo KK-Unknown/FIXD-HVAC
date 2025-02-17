@@ -38,10 +38,19 @@
 }
 
 .navbar__logo {
-    height: 90px; /* Adjust the height as needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: var(--light-gray); /* Set the text color */
+    text-decoration: none; /* Remove underline from the link */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the text */
+    height: 90px; /* Match the height of the navbar */
+}
+
+.index__logo {
+    height: 250px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align the image with the text */
-    color: var(--light-gray);
 }
 
 /* Navbar Menu for Desktop */
@@ -70,15 +79,6 @@
 
 .navbar__link:hover {
     color: var(--red);
-}
-
-.navbar__toggle {
-    display: none;
-    font-size: 1.5rem;
-    color: var(--light-gray);
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
 /* Fix Content Overlap Issue */
@@ -140,6 +140,7 @@
 
 .service i {
     font-size: 2.5rem;
+    margin-top: 1rem;
     color: var(--red);
 }
 
@@ -242,13 +243,6 @@
     margin-bottom: 2rem;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.services-page__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
 }
 
 .service-card {
