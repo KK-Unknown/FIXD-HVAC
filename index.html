@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIXD HVAC Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://kit.fontawesome.com/ca617004e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,10 +16,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero__content">
-            <h1>Stay Comfortable All Year Round</h1>
+            <h1>Stay Comfortable All Year Round!</h1>
             <img src="HVAC Design-rm-bkgrd.png" alt="FIXD HVAC Solutions Logo" class="index__logo">
-            <p>Expert heating, ventilation, air conditioning services, and more at your doorstep!</p>
-            <p>Serving all of Inland Empire</p>
+            <p>Expert heating, ventilation, air conditioning services, <strong>and more</strong> at your doorstep!</p>
+            <p>Serving Southern California for over 15 years</p>
             <a href="#contact" class="button">Get a Free Quote Today!</a>
         </div>
     </section>
@@ -28,34 +30,69 @@
         <div class="services__grid">
             <div class="service">
                 <i class="fa-solid fa-wind"></i>
-                <h3>Air Conditioning</h3>
-                <p>We provide installation, repair, and maintenance services for all types of air conditioning systems.</p>
+                <h3 data-hover-image="Best_AC_Brands.jpeg">Air Conditioning</h3>
+                <p>We provide installation, repair, and maintenance services for all types of air conditioning systems including <strong>Lennox, Rheem, Amana, Carrier Global, American Standard, Goodman, and more!</strong></p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-fire"></i>
-                <h3>Heating</h3>
+                <h3 data-hover-image="howaheatpumpworks_heating.jpg">Heating</h3>
                 <p>Our heating solutions keep your home warm and energy-efficient during the cold months.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-tools"></i>
-                <h3>Ventilation</h3>
+                <h3 data-hover-image="All-in-one-heating-and-cooling.jpeg">Ventilation</h3>
                 <p>Ensure proper airflow in your home with our professional ventilation system services.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-handshake"></i>
-                <h3>Handyman</h3>
-                <p>We provide solutions for your ceiling fans, light fixtures, basic plumbing needs, and more!</p>
+                <h3 data-hover-image="png-clipart-home-repair.jpeg">Handyman</h3>
+                <p>We are <strong>MORE than just an HVAC company</strong>, we provide solutions for your ceiling fans, light fixtures, basic plumbing needs, and more!</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="service-area">
+        <h2 class="section__title">Our Service Area</h2>
+        <div id="service-map"></div>
+        <div class="cities-list">
+            <h3>We serve these cities and surrounding areas:</h3>
+            <ul>
+                <li>Riverside</li>
+                <li>San Bernardino</li>
+                <li>Corona</li>
+                <li>Moreno Valley</li>
+                <li>Redlands</li>
+                <li>Fontana</li>
+                <li>Rancho Cucamonga</li>
+                <li>Ontario</li>
+                <li>Temecula</li>
+                <li>Winchester</li>
+                <li>Murrieta</li>
+                <li>Beaumont</li>
+                <li>Menifee</li>
+            </ul>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2 class="section__title">Why Choose Us?</h2>
-        <p>
-            With over 10 years of experience, we provide high-quality HVAC services to homes and businesses. Our
-            certified technicians and customer-focused approach ensure that your heating and cooling needs are always met.
-        </p>
+        <div class="about__content">
+            <p>
+                At FIXD HVAC Solutions, we’ve proudly served Southern California for over <strong>15 years</strong>, delivering high-quality HVAC services with honesty and expertise. 
+                As a locally owned company, we understand the unique demands of our region’s climate — and we tailor every solution to keep your home perfectly comfortable year-round.
+            </p>
+            <ul class="about__list">
+                <li><i class="fa-solid fa-circle-check"></i> Certified, experienced technicians who get it right the first time</li>
+                <li><i class="fa-solid fa-circle-check"></i> Friendly, customer-first service with no hidden fees</li>
+                <li><i class="fa-solid fa-circle-check"></i> Fast, reliable repairs, installations, and maintenance</li>
+                <li><i class="fa-solid fa-circle-check"></i> Energy-efficient solutions built for Southern California homes</li>
+            </ul>
+            <p>
+                Whether it's emergency repairs or full system installations, when you choose FIXD, you’re choosing peace of mind — and a job done right.
+            </p>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -85,11 +122,8 @@
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2025 FIXD HVAC Solutions. All rights reserved.</p>
-        <div class="footer__socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+        <p>Give us a call and <strong>feel</strong> the difference!</p>
+        <p>+1 (972) 839-4678</p>
     </footer>
 
     <script src="app.js"></script>
