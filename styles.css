@@ -555,8 +555,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
-        height: 60vh;
-        min-height: 300px;
+        padding: 100px 0.5rem 1rem;
     }
     
     .hero__content h1 {
